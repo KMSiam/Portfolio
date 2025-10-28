@@ -3,13 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="K.M. Siam - Computer Science Engineering student at Southeast University. Passionate about web development, programming, and creating innovative solutions.">
+        <meta name="keywords" content="K.M. Siam, Computer Science, Web Developer, Student, Southeast University, Programming, Java, Python, JavaScript">
+        <meta name="author" content="K.M. Siam">
+        
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="K.M. Siam - CSE Student Portfolio">
+        <meta property="og:description" content="Computer Science Engineering student passionate about web development and programming">
+        <meta property="og:type" content="website">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
+        <title>K.M. Siam - CSE Student Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -39,9 +50,13 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Siam</span><br> CSE Student</h1>
-
-                    <a href="#contact" class="button">Contact</a>
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Siam</span><br> CSE Student</h1>
+                    <p class="home__subtitle">Computer Science Engineering student at Southeast University, passionate about creating innovative solutions through code.</p>
+                    
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">Get In Touch</a>
+                        <a href="assets/pdf/Siam-CV.pdf" class="button button--ghost" download>Download CV</a>
+                    </div>
                 </div>
 
                 <div class="home__social">
@@ -65,17 +80,32 @@
             </section>
 
             <!--===== ABOUT =====-->
-            <section class="about section " id="about">
+            <section class="about section" id="about">
                 <h2 class="section-title">About</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/about.jpg" alt="Siam - Computer Science Student at Southeast University">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Siam</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                        <h2 class="about__subtitle">I'm Siam</h2>
+                        <p class="about__text">I'm a passionate Computer Science Engineering student at Southeast University with a strong foundation in programming and web development. I enjoy creating innovative solutions and learning new technologies. My goal is to become a skilled software developer and contribute to meaningful projects that make a positive impact.</p>
+                        
+                        <div class="about__info">
+                            <div class="about__info-item">
+                                <span class="about__info-title">15+</span>
+                                <span class="about__info-name">Projects<br>Completed</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-title">2+</span>
+                                <span class="about__info-name">Years<br>Experience</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-title">5+</span>
+                                <span class="about__info-name">Programming<br>Languages</span>
+                            </div>
+                        </div>
                     </div>                                   
                 </div>
             </section>
@@ -84,150 +114,141 @@
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+                <div class="skills__tabs">
+                    <button class="skills__tab-button active" data-target="skills-content">Professional</button>
+                    <button class="skills__tab-button" data-target="education-content">Educational</button>
+                </div>
 
+                <div class="skills__container bd-grid">
+                    <div id="skills-content" class="skills__content active">
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <p class="skills__text">Technologies and programming languages I work with as a Computer Science student.</p>
+                        
+                        <div class="skills__grid">
+                            <div class="skills__category">
+                                <h3 class="skills__category-title">Frontend</h3>
+                                <div class="skills__list">
+                                    <span class="skills__item"><i class='bx bxl-html5'></i>HTML5</span>
+                                    <span class="skills__item"><i class='bx bxl-css3'></i>CSS3</span>
+                                    <span class="skills__item"><i class='bx bxl-javascript'></i>JavaScript</span>
+                                    <span class="skills__item"><i class='bx bxl-react'></i>React</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            
+                            <div class="skills__category">
+                                <h3 class="skills__category-title">Backend</h3>
+                                <div class="skills__list">
+                                    <span class="skills__item"><i class='bx bx-code-block'></i>Java</span>
+                                    <span class="skills__item"><i class='bx bxl-python'></i>Python</span>
+                                    <span class="skills__item"><i class='bx bx-code-curly'></i>C++</span>
+                                    <span class="skills__item"><i class='bx bx-code-alt'></i>C</span>
+                                    <span class="skills__item"><i class='bx bx-data'></i>MySQL</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">45%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-block skills__icon'></i>
-                                <span class="skills__name">JAVA</span>
-                            </div>
-                            <div class="skills__bar skills__java">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-alt skills__icon'></i>
-                                <span class="skills__name">C</span>
-                            </div>
-                            <div class="skills__bar skills__c">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-curly skills__icon'></i>
-                                <span class="skills__name">C++</span>
-                            </div>
-                            <div class="skills__bar skills__cpp">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">88%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-alt skills__icon'></i>
-                                <span class="skills__name">PYTHON</span>
-                            </div>
-                            <div class="skills__bar skills__python">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">72%</span>
+                            
+                            <div class="skills__category">
+                                <h3 class="skills__category-title">Tools & Others</h3>
+                                <div class="skills__list">
+                                    <span class="skills__item"><i class='bx bxl-git'></i>Git</span>
+                                    <span class="skills__item"><i class='bx bxl-github'></i>GitHub</span>
+                                    <span class="skills__item"><i class='bx bx-mobile-alt'></i>Android Studio</span>
+                                    <span class="skills__item"><i class='bx bxs-paint'></i>Figma</span>
+                                    <span class="skills__item"><i class='bx bx-palette'></i>UI/UX</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+
+                    <div id="education-content" class="skills__content">
+                        <h2 class="skills__subtitle">Academic Excellence</h2>
+                        <p class="skills__text">Educational achievements and academic milestones in Computer Science and Engineering.</p>
+                        
+                        <div class="education__content">
+                            <h3 class="education__title">Bachelor of Science in Computer Science & Engineering</h3>
+                            <span class="education__studies">Southeast University, Dhaka</span>
+                            <span class="education__year">2022 - Present (Expected 2026)</span>
+                            <p class="education__description">Pursuing comprehensive education in software engineering, algorithms, data structures, database systems, and artificial intelligence. Maintaining strong academic performance while actively engaging in programming competitions, hackathons, and collaborative software development projects. Specialized coursework includes Object-Oriented Programming, Web Technologies, Software Engineering, and Computer Networks.</p>
+                        </div>
+                        
+                        <div class="education__content">
+                            <h3 class="education__title">Higher Secondary School Certificate</h3>
+                            <span class="education__studies">Barishal City College, Barishal</span>
+                            <span class="education__year">2020 - 2022</span>
+                            <p class="education__description">Successfully completed higher secondary education with distinction in Science Group, achieving excellent grades in Mathematics, Physics, and Chemistry. This strong foundation in analytical thinking and problem-solving prepared me for advanced studies in Computer Science and Engineering.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Projects</h2>
+                <p class="work__description">Here are some of the projects I've worked on during my studies and personal learning journey.</p>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="Web Development Project - Responsive Website">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="Mobile App Development Project">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="Database Management System Project">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="Java Programming Project">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="C++ Algorithm Implementation">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+                    <a href="#" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="Python Data Analysis Project">
                     </a>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact__container bd-grid">
+                    <div>
+                        <h2 class="contact__subtitle">Get In Touch</h2>
+                        <p class="contact__text">Feel free to reach out if you'd like to collaborate on a project, have any questions, or just want to connect!</p>
+                        
+                        <div class="contact__information">
+                            <div class="contact__info-item">
+                                <i class='bx bx-phone contact__icon'></i>
+                                <div>
+                                    <h3 class="contact__info-title">Call Me</h3>
+                                    <span class="contact__info-subtitle">+880 1234-567890</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__info-item">
+                                <i class='bx bx-envelope contact__icon'></i>
+                                <div>
+                                    <h3 class="contact__info-title">Email</h3>
+                                    <span class="contact__info-subtitle">siam@example.com</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__info-item">
+                                <i class='bx bx-map contact__icon'></i>
+                                <div>
+                                    <h3 class="contact__info-title">Location</h3>
+                                    <span class="contact__info-subtitle">Dhaka, Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <form action="https://formspree.io/f/xovkboye" method="POST" class="contact__form">
-                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="message" cols="0" rows="10" placeholder="Your Message" class="contact__input" required></textarea>
-                        <button type="submit" class="contact__button button">Send</button>
+                        <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
+                        <input type="text" name="subject" placeholder="Subject" class="contact__input" required>
+                        <textarea name="message" cols="0" rows="7" placeholder="Your Message" class="contact__input" required></textarea>
+                        <button type="submit" class="contact__button button">Send Message <i class='bx bx-right-arrow-alt'></i></button>
                     </form>
                 </div>
             </section>
