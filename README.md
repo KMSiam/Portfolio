@@ -38,7 +38,7 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/KMSiam/portfolio-website.git
+git clone https://github.com/KMSiam/Siam.git
 ```
 
 ## 📁 Project Structure
@@ -93,7 +93,7 @@ The contact form uses Formspree for backend processing:
 1. Push your code to a GitHub repository
 2. Go to Settings > Pages
 3. Select source branch (usually `main`)
-4. Your site will be available at `https://username.github.io/repository-name`
+4. Your site will be available at `https://username.github.io/Siam`
 
 ### Netlify
 1. Connect your GitHub repository to Netlify
@@ -128,8 +128,13 @@ This project is licensed under the MIT License.
 - Southeast University for the educational foundation
 - Boxicons for the beautiful icon library
 - Formspree for the contact form service
+- [Bedimcode](https://youtu.be/AKNvTxWOdKw?si=MYaoNCWdW43b78JH) - YouTube tutorial that served as the foundation and inspiration for this portfolio design
 - The web development community for inspiration and resources
 
 ---
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
+
+## 📸 Preview
+
+![Portfolio Preview](preview.png)
