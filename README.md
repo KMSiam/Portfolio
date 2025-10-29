@@ -41,20 +41,6 @@
 git clone https://github.com/KMSiam/portfolio-website.git
 ```
 
-2. Navigate to the project directory:
-```bash
-cd portfolio-website
-```
-
-3. Open `index.html` in your web browser or use a local server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-```
-
 ## 📁 Project Structure
 
 ```
