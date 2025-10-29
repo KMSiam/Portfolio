@@ -1,3 +1,7 @@
+## 📸 Preview
+
+![Portfolio Preview](preview.png)
+
 # K.M. Siam - Portfolio Website
 
 > A modern, responsive personal portfolio website showcasing my journey as a Computer Science Engineering student at Southeast University.
@@ -134,7 +138,3 @@ This project is licensed under the MIT License.
 ---
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
-
-## 📸 Preview
-
-![Portfolio Preview](preview.png)
