@@ -97,7 +97,7 @@ The contact form uses Formspree for backend processing:
 1. Push your code to a GitHub repository
 2. Go to Settings > Pages
 3. Select source branch (usually `main`)
-4. Your site will be available at `https://username.github.io/Siam`
+4. Your site will be available at `https://username.github.io/repo-name`
 
 ### Netlify
 1. Connect your GitHub repository to Netlify
